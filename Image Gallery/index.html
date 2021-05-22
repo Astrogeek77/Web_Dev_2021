@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+    <title>Heroes | Responsive Movie Landing Page Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section>
+		<header>
+			<a href="https://github.com/Astrogeek77" class="logo">< Astrogeek77 /></a>
+			<div class="toggle" onclick="toggleMenu();"></div>
+			<ul class="navigation">
+				<li><a href="#" style="--i:1;">Home</a></li>
+				<li><a href="#" style="--i:2;">Team</a></li>
+				<li><a href="#" style="--i:3;">About</a></li>
+				<li><a href="#" style="--i:4;">Contact</a></li>
+				<li><a href="https://astrogeek77.github.io/Resume/Resume/" 
+					style="--i:5;">Resume</a></li>
+			</ul>
+		</header>
+		<div class="container">
+			<div class="box" style="--i:3;">
+				<div class="imgBx">
+					<img src="images/img-4.jpg">
+				</div>
+			</div>
+			<div class="box" style="--i:4;">
+				<div class="imgBx">
+					<img src="images/img-2.jpg">
+				</div>
+			</div>
+			<div class="box" style="--i:5;">
+				<div class="imgBx">
+					<img src="images/img-3.jpg">
+				</div>
+			</div>
+			<div class="box" style="--i:6;">
+				<div class="imgBx">
+					<img src="images/img-5.jpg">
+				</div>
+			</div>
+			<!-- <div class="box" style="--i:7;">
+				<div class="imgBx">
+					<img src="img4.jpg">
+				</div>
+			</div>
+			<div class="box" style="--i:8;">
+				<div class="imgBx">
+					<img src="img4.jpg">
+				</div>
+			</div> -->
+		</div>
+		<div class="footer">
+			<ul class="sci">
+				<li><a href="https://github.com/Astrogeek77" 
+					style="--i:9">Github</a></li>
+				<li><a href="https://twitter.com/GautamJ49902907" 
+					style="--i:8">Twitter</a></li>
+				<li><a href="https://www.reddit.com/user/astrogeeek77" 
+					style="--i:7">Reddit</a></li>
+				<li><a href="https://www.linkedin.com/in/gautam-jain-587675193/" 
+					style="--i:8">LinkedIn</a></li>
+			</ul>
+			<p class="copyrightText"><a href="https://github.com/Astrogeek77">
+				©Web2021 - Astrogeek77</a></p>
+		</div>
+	</section>
+	<script>
+		let imgBx = document.querySelectorAll('.imgBx');
+		imgBx.forEach(popup => popup.addEventListener('click', () =>{
+			popup.classList.toggle('active')
+		}))
+
+		function toggleMenu(){
+	      var menuToggle = document.querySelector('.toggle');
+	      var navigation = document.querySelector('.navigation');
+	      menuToggle.classList.toggle('active');
+	      navigation.classList.toggle('active');
+	    }
+	</script>
+</body>
+</html>
+
