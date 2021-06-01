@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arima Madurai', cursive;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#2b1055, #7597da);
+    /* overflow: hidden; */
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+}
+
+section img#moon {
+    top: -100%;
+    mix-blend-mode: screen;
+}
+
+section img#stars {
+    top: -100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section img#mountains_behind {
+    bottom: -100%;
+    top: initial;
+}
+
+section img#mountains_front {
+    bottom: -120%;
+    top: initial;
+    z-index: 1000;
+}
+
+#text {
+    position: absolute;
+    color: #fff;
+    font-size: 8vw;
+    font-weight: 200;
+    margin-right: -2000px;
+}
+
+#text span {
+    font-weight: 700;
+}
+
+#btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 80px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 50px;
+    background: #fff;
+    border-radius: 40px;
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #2b1005;
+    z-index: 10000;
+}
