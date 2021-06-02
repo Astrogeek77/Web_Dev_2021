@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+:root {
+    --bg-color: #c8d6e5;
+    --typewriterSpeed: 6s;
+    --typewriterCharacters: 25;
+    --typewriterCharacters2: 21;
+    --opacity-checker: 1;
+}
+
+body {
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    min-height: 100vh;
+    display: grid;
+    font-weight: 400;
+    place-content: center;
+    text-align: center;
+    background: var(--bg-color);
+}
+
+h1 {
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    width: max-content;
+    user-select: none;
+}
+
+h1::before,
+h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+h1::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+h1::after {
+    width: 0.125em;
+    background: black;
+    opacity: var(--opacity-checker);
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
+        blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+
+/* h2 */
+
+h2 {
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+    user-select: none;
+}
+
+h2::before,
+h2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+h2::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters2)) calc(var(--typewriterSpeed) + 3s) forwards;
+}
+
+h2::after {
+    width: 0.125em;
+    background: transparent;
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters2)) calc(var(--typewriterSpeed) + 3s) forwards,
+        blink 750ms steps(var(--typewriterCharacters2)) calc(var(--typewriterSpeed) + 2s) infinite;
+    /* invisible var(--typewriterSpeed) steps(var(--typewriterCharacters2)) calc(var(--typewriterSpeed) + 2s); */
+}
+
+/* dubtitle */
+
+.subtitle {
+    color: hsl(0 0% 0% / 0.7);
+    font-size: 2.2rem;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 3s ease calc((2 * var(--typewriterSpeed)) + 3s) forwards;
+}
+
+/* animations */
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    from {
+        background: black;
+    }
+
+    to {
+        background: transparent;
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes invisible {
+    to {
+        opacity: 1;
+    }
+}
+
+/* link */
+
+#link {
+    position: absolute;
+    bottom: 2em;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+}
+
+#link:hover,
+#link:focus {
+    color: teal;
+}
