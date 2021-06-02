@@ -41,7 +41,7 @@ animation
 
     .add({
         targets: '#text',
-        marginRight: '-80px',
+        marginRight: '0px',
         duration: 1000,
         easing: 'easeInOutBack'
     })
