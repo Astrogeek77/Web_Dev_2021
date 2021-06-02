@@ -7,6 +7,7 @@
     --typewriterCharacters: 25;
     --typewriterCharacters2: 21;
     --opacity-checker: 1;
+    --opacity-checker2: 1;
 }
 
 body {
@@ -83,6 +84,7 @@ h2::before {
 h2::after {
     width: 0.125em;
     background: transparent;
+    opacity: var(--opacity-checker2);
     animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters2)) calc(var(--typewriterSpeed) + 3s) forwards,
         blink 750ms steps(var(--typewriterCharacters2)) calc(var(--typewriterSpeed) + 2s) infinite;
     /* invisible var(--typewriterSpeed) steps(var(--typewriterCharacters2)) calc(var(--typewriterSpeed) + 2s); */
