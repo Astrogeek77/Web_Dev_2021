@@ -8,3 +8,4 @@
 | 04  |       [HTML CSS GSAP](https://github.com/Astrogeek77/Web_Dev_2021/tree/main/CSS%20GSAP)       | [demo](https://astrogeek77.github.io/Web_Dev_2021/CSS%20GSAP/)
 | 05  |       [Timeline Animation](https://github.com/Astrogeek77/Web_Dev_2021/tree/main/Timeline%20Animation)       | [demo](https://astrogeek77.github.io/Web_Dev_2021/Timeline%20Animation/)
 | 06  |       [CSS Typewriter](https://github.com/Astrogeek77/Web_Dev_2021/tree/main/CSS%20Typewriter)       | [demo](https://astrogeek77.github.io/Web_Dev_2021/CSS%20Typewriter/)
+| 07  |       [Glowing button](https://github.com/Astrogeek77/Web_Dev_2021/tree/main/Glowing%20Buttons)       | [demo](https://astrogeek77.github.io/Web_Dev_2021/Glowing%20Buttons/)
