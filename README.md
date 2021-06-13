@@ -10,3 +10,4 @@
 | 06  |       [CSS Typewriter](https://github.com/Astrogeek77/Web_Dev_2021/tree/main/CSS%20Typewriter)       | [demo](https://astrogeek77.github.io/Web_Dev_2021/CSS%20Typewriter/)
 | 07  |       [Glowing button](https://github.com/Astrogeek77/Web_Dev_2021/tree/main/Glowing%20Buttons)       | [demo](https://astrogeek77.github.io/Web_Dev_2021/Glowing%20Buttons/)
 | 08  |       [Google Search Clone](https://github.com/Astrogeek77/Web_Dev_2021/tree/main/Google%20Search%20Clone)       | [demo](https://astrogeek77.github.io/Web_Dev_2021/Google%20Search%20Clone/)
+| 08  |       [Dropdown Color Change](https://github.com/Astrogeek77/Web_Dev_2021/tree/main/Dropdown_colorchange)       | [demo](https://astrogeek77.github.io/Web_Dev_2021/Dropdown_colorchange/)
