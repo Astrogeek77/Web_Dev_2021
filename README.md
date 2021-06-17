@@ -12,3 +12,4 @@
 | 08  |       [Google Search Clone](https://github.com/Astrogeek77/Web_Dev_2021/tree/main/Google%20Search%20Clone)       | [demo](https://astrogeek77.github.io/Web_Dev_2021/Google%20Search%20Clone/)
 | 09  |       [Dropdown Color Change](https://github.com/Astrogeek77/Web_Dev_2021/tree/main/Dropdown_colorchange)       | [demo](https://astrogeek77.github.io/Web_Dev_2021/Dropdown_colorchange/)
 | 10  |       [Bootstrap-5 Practice](https://github.com/Astrogeek77/Web_Dev_2021/tree/main/Frontend-bootcamp-bootstrap-5)       | [demo](https://astrogeek77.github.io/Web_Dev_2021/Frontend-bootcamp-bootstrap-5/)
+| 11  |       [BGMI Animation](https://github.com/Astrogeek77/Web_Dev_2021/tree/main/BGMI%20animation)       | [demo](https://astrogeek77.github.io/Web_Dev_2021/BGMI%20animation/)
