@@ -1,7 +1,7 @@
 const body = document.querySelector('body');
 const container = document.querySelector('.container');
 
-const timespanBullet = 8000;
+const timespanBullet = 4000;
 const timespanBlood = 4000;
 
 // add random images to backgroundImage
