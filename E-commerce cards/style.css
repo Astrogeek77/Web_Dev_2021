@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:wght@300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200;300;400;500;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:wght@300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+ 
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+}
+ 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #dcdcdc;
+    background-image: url("https://www.transparenttextures.com/patterns/diagonales-decalees.png");
+}
+
+.container {
+    position: relative;
+    width: 75em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1.5em;
+    padding: 1.2em;
+}
+
+.container .card {
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+}
+
+.container .card .imgBx {
+    position: relative;
+    width: 100%;
+    height: 20em;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.container .card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+    transform-origin: right;
+}
+
+.container .card:hover .imgBx img,
+.container .card:focus .imgBx img {
+    transform: scale(1.2);
+}
+
+.container .card .imgBx .action {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.container .card .imgBx .action li {
+    position: relative;
+    list-style: none;
+    width: 2.5em;
+    height: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.25em;
+    cursor: pointer;
+    background: #fff;
+    transform: translateX(60px);
+    transition: transform .5s;
+}
+
+.container .card .imgBx .action li:nth-child(2){
+    transition-delay: 0.15s;
+}
+
+.container .card .imgBx .action li:nth-child(3){
+    transition-delay: 0.3s;
+}
+
+.container .card:hover .imgBx .action li,
+.container .card:focus .imgBx .action li {
+    transform: translateX(0px);
+}
+
+.container .card .imgBx .action li:hover {
+    background: #ff2020;
+    color: #fff;
+}
+
+.container .card .imgBx .action li span {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%) translateX(-1.25em);
+    white-space: nowrap;
+    padding: .25em .375em;
+    background: #fff;
+    color: #333;
+    font-weight: 500;
+    font-size: .75em;
+    border-radius: .25em;
+    pointer-events: none;
+    opacity: 0;
+    transition: .5s;
+}
+
+.container .card .imgBx .action li:hover span,
+.container .card .imgBx .action li:focus span {
+    transform: translateY(-50%) translateX(0px);
+    opacity: 1;
+}
+
+.container .card .imgBx .action li:hover span:before,
+.container .card .imgBx .action li:focus span:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -.25em;
+    width: .5em;
+    height: .5em;
+    background: #fff;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.container .card .content {
+    padding: .625em;
+}
+
+.container .card .content .productName h3 {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #333;
+    margin: .3125em 0;
+}
+
+.container .card .content .price_rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1.2em
+}
+
+.container .card .content .price_rating h2 {
+    position: absolute;
+    left: 0px;
+    font-size: 1.25em;
+    color: #ff2020;
+    font-weight: 500;
+}
+
+.container .card .content .price_rating .fas {
+    color: #ffd513;
+    cursor: pointer;
+}
+
+.container .card .content .price_rating .fas.grey {
+    color: #ccc;
+}
+
+.container .card .content .price_rating .rating {
+    position: absolute;
+    right: 10px;
+    user-select: none;
+}
