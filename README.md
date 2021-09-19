@@ -15,3 +15,4 @@
 | 11  |       [BGMI Animation](https://github.com/Astrogeek77/Web_Dev_2021/tree/main/BGMI%20animation)       | [demo](https://astrogeek77.github.io/Web_Dev_2021/BGMI%20animation/)
 | 12  |       [E-Commerce Cards](https://github.com/Astrogeek77/Web_Dev_2021/tree/main/E-commerce%20cards)       | [demo](https://astrogeek77.github.io/Web_Dev_2021/E-commerce%20cards/)
 | 13  |       [FontAwesome Animation](https://github.com/Astrogeek77/Web_Dev_2021/tree/main/Font%20Awesome%20Animation)       | [demo](https://astrogeek77.github.io/Web_Dev_2021/Font%20Awesome%20Animation/)
+| 14  |       [Netflix Clone](https://github.com/Astrogeek77/Web_Dev_2021/tree/main/netflix%20clone)       | [demo](https://astrosite77.me/Web_Dev_2021/netflix%20clone/)
